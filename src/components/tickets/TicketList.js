@@ -3,6 +3,12 @@ import "./Tickets.css" //importing my css styling file
 
 export const TicketList = () => {
     const [tickets, setTickets] = useState([])
+    //we dont want to modify the array of tickets we got from above, but we still want to display a list of filtered tickets.... so...
+    //create another state variable for filtered tix
+    const [filteredtickets, setFiltered] = useState([])
+
+    const localHoneyUser = localStorage.getItem("honey_user")//getting hojney user obj from local storage
+    const honeyUserObject = JSON.parse(localHoneyUser) //converting the string of the localHoneyUser to an object
 
     useEffect(
         () => {
@@ -14,6 +20,25 @@ export const TicketList = () => {
         },
         [] // When this array is empty, you are observing initial component state; dependency array; useEffect watches this array
     )
+
+    //create another useEffect to observe the ticket state
+    useEffect(
+        () => {
+            //checking if the current user is an employee or customer
+            if(honeyUserObject.staff) { //checking if staff is true or false
+                //for employees
+                setFiltered(tickets) //we want to show all the tickets, so we are invoking the setFilteredTickets funciton and passing it the data from tickets. 
+            }
+            else{
+                //for customers 
+                const myTickets = tickets.filter(ticket => ticket.userId === honeyUserObject.id) //filtering the tickets to compare the id of the user with the honeyUser id
+                setFiltered(myTickets) //invoking setfilteredTickets and passing it the info from myTickets, which is only the tickets matching the filtered condition
+                 }
+        },
+        [tickets]//this time we are watching for every time the ticket state variable changes
+        )
+
+
     return (
     <>
     <h2>List of Tickets</h2>
