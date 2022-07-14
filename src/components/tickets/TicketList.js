@@ -6,6 +6,21 @@ export const TicketList = () => {
     //we dont want to modify the array of tickets we got from above, but we still want to display a list of filtered tickets.... so...
     //create another state variable for filtered tix
     const [filteredtickets, setFiltered] = useState([])
+    //create another state variable for the emergency tix; by default, we don't want to see only emergency tix, so set useState to false
+    const [emergency, setEmergency] = useState(false) 
+
+
+    //create a useEffect to observe when the state of emergency changes
+    useEffect(
+        () => {
+            if (emergency) {  //if emergency is true
+                const emergencyTickets = tickets.filter(ticket => ticket.emergency === true) //filtering through the original ticket array to check if emergency evaluates to true; since it produces a new array, make sur to declare to a new variable. 
+                setFiltered(emergencyTickets) //update the state variable to emergencyTickets
+            }
+        },
+        [emergency] //state being observed
+    )
+
 
     const localHoneyUser = localStorage.getItem("honey_user")//getting hojney user obj from local storage
     const honeyUserObject = JSON.parse(localHoneyUser) //converting the string of the localHoneyUser to an object
@@ -41,6 +56,13 @@ export const TicketList = () => {
 //since we have now (above) invoked setFiltered, that changes the state of filteredtickets, so we have to use filtered tickets in the return statement below. 
     return (
         <>
+            <button
+            onClick={ //this on click is a function; set the state of this function to true
+                () => {
+                    setEmergency(true) 
+                }
+            }
+            >Emergency</button> 
             <h2>List of Tickets</h2>
             <article className="tickets">
                 {
