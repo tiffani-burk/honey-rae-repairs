@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react"
+import { useNavigate } from "react-router-dom"
 import "./Tickets.css" //importing my css styling file
 
 export const TicketList = () => {
@@ -8,6 +9,8 @@ export const TicketList = () => {
     const [filteredtickets, setFiltered] = useState([])
     //create another state variable for the emergency tix; by default, we don't want to see only emergency tix, so set useState to false
     const [emergency, setEmergency] = useState(false) 
+    //import useNavigate and declare to variable 
+    const navigate = useNavigate()
 
 
     //create a useEffect to observe when the state of emergency changes
@@ -16,6 +19,9 @@ export const TicketList = () => {
             if (emergency) {  //if emergency is true
                 const emergencyTickets = tickets.filter(ticket => ticket.emergency === true) //filtering through the original ticket array to check if emergency evaluates to true; since it produces a new array, make sur to declare to a new variable. 
                 setFiltered(emergencyTickets) //update the state variable to emergencyTickets
+            }
+            else {
+                setFiltered(tickets) //setFiltered back to the origal tickets, which is showing all of them
             }
         },
         [emergency] //state being observed
@@ -56,13 +62,21 @@ export const TicketList = () => {
 //since we have now (above) invoked setFiltered, that changes the state of filteredtickets, so we have to use filtered tickets in the return statement below. 
     return (
         <>
-            <button
-            onClick={ //this on click is a function; set the state of this function to true
-                () => {
-                    setEmergency(true) 
-                }
-            }
-            >Emergency</button> 
+        {
+            honeyUserObject.staff //ternary statement evals to true or false
+             //this on click is a function; set the state of this function to true
+             //two items or more must have a parent 
+             //if true of 1st setEmergency, invoke the button
+             //if false on 2nd setEmergency, invoke the button
+            ?  <> 
+            <button onClick={ () => { setEmergency(true) } } >Emergency</button> 
+            <button onClick={ () => { setEmergency(false) } } >Show all</button> 
+            </>
+            : <button onClick={() => navigate("/ticket/create")}>Create Ticket</button> //if false, nav to new route create ticket button
+
+            // : "" //if false, show nothing
+        }
+           
             <h2>List of Tickets</h2>
             <article className="tickets">
                 {
