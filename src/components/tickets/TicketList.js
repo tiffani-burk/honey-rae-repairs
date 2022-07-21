@@ -122,7 +122,7 @@ export const TicketList = ({ searchTermState }) => {
                     //line 53 is interpolate filteredticket on line 27 and access the description, using dot notation; interpolating does not need $ in react
                     //line 56 is a condensed if else statement
                     {
-                        return <section className="filteredticket">
+                        return <section className="ticket">
                             <header>
                                 {filteredticket.description}
                             </header>

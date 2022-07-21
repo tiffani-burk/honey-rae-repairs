@@ -1,6 +1,6 @@
 import { Repairs } from "./components/Repairs"
 import { createRoot } from "react-dom/client"
-import "./index.css"
+import "./index.css" //importing main css file for full doc
 import { BrowserRouter } from "react-router-dom"
 
 const container = document.getElementById("root")

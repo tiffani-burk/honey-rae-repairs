@@ -4,8 +4,13 @@
 }
 
 .ticket {
-    background-color: rgb(243, 230, 255);
-    border: 1px dotted darkmagenta;
+    background-color: #f0eeed;
+    border: 1px dotted #7D6167;
     padding: .7rem;
     margin: .5rem;
+}
+button {
+    background-color: #5ba4fc;
+    padding: .2rem;
+    color: white;
 }
