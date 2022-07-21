@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react"
+import { Employee } from "./Employee"
 import "./employees.css"
 
 // set the initial state, then in the initial state useEffect, fetch all employees from the API, then the JSX will rendor the name and email of the employees 
@@ -23,12 +24,11 @@ return <>
 <h3>Employee List:</h3>
     <article className="employees">
         { 
-            employees.map(employee => {
-                return <section className="employee" key={`employee--${employee.id}`}>
-                    <div><strong> Name:</strong> {employee.fullName}</div>
-                    <div> <strong>Email: </strong> {employee.email}</div>
-                </section>
-            })
+            employees.map(employee => <Employee 
+                key={`employee--${employee.id}`}
+                id={employee.id} 
+                fullName={employee.fullName} 
+                email={employee.email} />)
         }
     </article>
 
