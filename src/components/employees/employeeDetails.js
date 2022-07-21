@@ -18,10 +18,11 @@ export const EmployeeDetails = () => {
     )
 
     return <section className="employee">
-        <header>{employee?.user?.fullName}  </header>
-            <div>Email:{employee?.user?.email}</div>
-            <div>Specialty:{employee.specialty}</div>
-            <div>Rate:{employee.rate}</div>
-     <footer>Currently working on {employee?.employeeTickets?.length}</footer>
+        <header><h3> Employee Details </h3>  </header>
+            <div><strong> Name: </strong>{employee?.user?.fullName}  </div>
+            <div><strong>Email: </strong>{employee?.user?.email}</div>
+            <div><strong>Specialty:  </strong>{employee.specialty}</div>
+            <div><strong>Rate:  </strong>${employee.rate}</div>
+     <footer> Currently working on service ticket #{employee?.employeeTickets?.length} </footer>
     </section>
 }
