@@ -1,0 +1,14 @@
+.employees {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.employee {
+    background-color: pink;
+   border: 2px solid fuchsia;
+    color: black;
+    padding: .5rem;
+    margin: .5rem;
+    box-shadow: 5px 5px 5px grey;
+}
