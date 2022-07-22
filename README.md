@@ -12,7 +12,7 @@ Created this application using React for multiple users. The user can log in as 
 
 <img width="1023" alt="Screen Shot 2022-07-21 at 9 41 09 PM" src="https://user-images.githubusercontent.com/99150447/180351303-c0e8f573-5093-4847-a3a4-badf9c300509.png">
 
-<img width="1023" alt="Screen Shot 2022-07-21 at 9 41 16 PM" src="https://user-images.githubusercontent.com/99150447/180351309-010da985-38da-40c4-b91d-1df898b7c667.png">
+<img width="1019" alt="Screen Shot 2022-07-21 at 9 49 26 PM" src="https://user-images.githubusercontent.com/99150447/180352194-5b264e3c-b5c3-438a-baaa-f181464cd415.png">
 
 
 ERD 
