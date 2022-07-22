@@ -1,5 +1,9 @@
+
+
 import { Link, useNavigate } from "react-router-dom"
 import "./NavBar.css"
+
+//create a component that will return a list of navbar items, with Links "to" their paired Route
 
 export const EmployeeNavBar = () => {
     const navigate = useNavigate()
@@ -11,6 +15,9 @@ export const EmployeeNavBar = () => {
             </li>
             <li className="navbar__item active">
                 <Link className="navbar__link" to="/employees">Employees</Link>
+            </li>
+            <li className="navbar__item active">
+                <Link className="navbar__link" to="/customers">Customers</Link>
             </li>
             {
                 localStorage.getItem("honey_user")
