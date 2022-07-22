@@ -9,8 +9,19 @@
     padding: .7rem;
     margin: .5rem;
 }
+
 button {
-    background-color: #5ba4fc;
     padding: .2rem;
-    color: white;
+    width: 6rem;
+}
+
+.button-div {
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+}
+.search-box {
+    width: 24%;
+    height: 1.7rem;
+    margin-top: .5rem;
 }

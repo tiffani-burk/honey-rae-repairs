@@ -28,7 +28,7 @@ export const CustomerDetails = () => {
         [customerId]
     )
     //return JSX that returns the name, address and phone of the customer 
-return <section >
+return <section className="customer-dets">
     <div><strong>Name: </strong>{customer?.user?.fullName} </div>
     <div><strong>Email: </strong>{customer?.user?.email} </div>
     <div><strong>Address: </strong> {customer?.address} </div>

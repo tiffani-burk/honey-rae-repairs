@@ -1,0 +1,14 @@
+.customer-container {
+  
+    display: flex; 
+    flex-direction: column;
+    background-color: #f0eeed; 
+    color: black;
+    padding: .5rem;
+    margin: 1rem;
+    box-shadow: 5px 5px 5px grey;
+   
+  
+  
+}
+

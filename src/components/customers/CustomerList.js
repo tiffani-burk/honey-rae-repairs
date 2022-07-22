@@ -3,6 +3,7 @@
 
 import { useEffect, useState } from "react"
 import { Customer } from "./Customer"
+import "./Customer.css"
 
 //dont forget, since the fetch is returning an array, make sure there is an empty array in the useState
 export const Customerlist = () => {
@@ -29,7 +30,7 @@ export const Customerlist = () => {
 
 return <>
 <h3>Customer List:</h3>
-    <article className="customers">
+    <article className="customers-list">
         {
             customers.map(customer => <Customer key={`customer--${customer.id}`}
                 id={customer.id}

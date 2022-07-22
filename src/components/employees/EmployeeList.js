@@ -22,7 +22,7 @@ export const EmployeeList = () => {
 //we need a unique react key, since we are iterating. 
 return <>
 <h3>Employee List:</h3>
-    <article className="employees">
+    <article className="employees-list">
         { 
             employees.map(employee => <Employee 
                 key={`employee--${employee.id}`}

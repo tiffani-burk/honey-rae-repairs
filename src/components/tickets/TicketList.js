@@ -103,8 +103,10 @@ export const TicketList = ({ searchTermState }) => {
                     //if false on 2nd setEmergency, invoke the button
                     //if false, nav to new route create ticket button
                     ? <>
+                        <div className="button-div">
                         <button onClick={() => { setEmergency(true) }} >Emergency</button>
                         <button onClick={() => { setEmergency(false) }} >Show all</button>
+                        </div>
                     </>
                     : <>
                         <button onClick={() => navigate("/ticket/create")}>Create Ticket</button>
@@ -115,7 +117,7 @@ export const TicketList = ({ searchTermState }) => {
                 // : "" //if false, show nothing
             }
 
-            <h2>List of Tickets</h2>
+            <h2>List of Service Tickets</h2>
             <article className="tickets">
                 {
                     filteredtickets.map(filteredticket => //iterate through filteredtickets with .map to make filteredtickets dynamic
