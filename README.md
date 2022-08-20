@@ -1,93 +1,38 @@
 
-Created this application using React for multiple users. The user can log in as a customer or an employee. The employee-user has the ability to search service tickets by name, view emergency only tickets or all tickets and view a list of customers. When clicking on the customer link, they can view the customer details. They also have the ability to view employees and employee details. The customer-user has the ability to create a service request ticket, which then displays to their screen and updates to the employees account as well. The customer-user can also view open tickets (service requests that have not been worked on) and view just their service request tickets.  Dynamic coding. ERD is attached below.
+### Overview
+This application was built using React for multiple users. The user can log in as a customer or an employee. The employee-user has the ability to search service tickets by name, view emergency only tickets or all tickets and view a list of customers. When clicking on the customer link, they can view the customer details. They also have the ability to view employees and employee details. The customer-user has the ability to create a service request ticket, which then displays to their screen and updates to the employees account as well. The customer-user can also view open tickets (service requests that have not been worked on) and view just their service request tickets.  Dynamic coding. ERD is attached below.
 
 
-<img width="1024" alt="Screen Shot 2022-07-21 at 9 40 34 PM" src="https://user-images.githubusercontent.com/99150447/180351152-3b11eb39-498d-4edb-bfda-cf2c21785cfc.png">
+### Video Walkthrough
 
-<img width="1024" alt="Screen Shot 2022-07-21 at 9 40 44 PM" src="https://user-images.githubusercontent.com/99150447/180351210-e35f9d94-ef1c-46f9-a1c0-8e6e073b65cc.png">
-
-<img width="1024" alt="Screen Shot 2022-07-21 at 9 40 56 PM" src="https://user-images.githubusercontent.com/99150447/180351260-4adb18ed-550b-4e38-ac32-73effc714e53.png">
-
-<img width="1024" alt="Screen Shot 2022-07-21 at 9 41 03 PM" src="https://user-images.githubusercontent.com/99150447/180351281-4bb292ab-cba3-4afb-b1b1-d2bf14744d49.png">
-
-<img width="1023" alt="Screen Shot 2022-07-21 at 9 41 09 PM" src="https://user-images.githubusercontent.com/99150447/180351303-c0e8f573-5093-4847-a3a4-badf9c300509.png">
-
-<img width="1019" alt="Screen Shot 2022-07-21 at 9 49 26 PM" src="https://user-images.githubusercontent.com/99150447/180352194-5b264e3c-b5c3-438a-baaa-f181464cd415.png">
+https://user-images.githubusercontent.com/99150447/185728611-c24ebb70-ee14-492b-adfc-5acfb24cc031.mp4
 
 
-ERD 
+
+### Images
+#### Customer View 
+<img width="1009" alt="Screen Shot 2022-08-19 at 11 04 03 PM" src="https://user-images.githubusercontent.com/99150447/185728230-597ce674-aaab-4cdb-9caf-310f88c876d2.png">
+
+
+<img width="1010" alt="Screen Shot 2022-08-19 at 11 04 11 PM" src="https://user-images.githubusercontent.com/99150447/185728252-85979ad2-bdac-4829-83b9-6eb63ccba9e4.png">
+
+<img width="1012" alt="Screen Shot 2022-08-19 at 11 11 29 PM" src="https://user-images.githubusercontent.com/99150447/185728486-9b1ec2f1-ab66-4a5b-931b-659baaed6dd2.png">
+
+
+#### Employee View 
+<img width="1024" alt="Screen Shot 2022-08-19 at 11 02 54 PM" src="https://user-images.githubusercontent.com/99150447/185728271-e977e740-6e7d-4777-892f-1af77ba34995.png">
+
+<img width="1011" alt="Screen Shot 2022-08-19 at 11 03 06 PM" src="https://user-images.githubusercontent.com/99150447/185728277-2ffdd92b-0d03-418a-82ca-b64681e34b22.png">
+
+<img width="1010" alt="Screen Shot 2022-08-19 at 11 03 14 PM" src="https://user-images.githubusercontent.com/99150447/185728285-c06d6586-9092-47e6-9121-b316af74095a.png">
+
+<img width="906" alt="Screen Shot 2022-08-19 at 11 07 31 PM" src="https://user-images.githubusercontent.com/99150447/185728359-c347ff78-6eee-4d5f-9553-a15d494d5f2c.png">
+
+<img width="1020" alt="Screen Shot 2022-08-19 at 11 03 37 PM" src="https://user-images.githubusercontent.com/99150447/185728367-884778dd-5950-454c-973b-2e1694094594.png">
+
+<img width="901" alt="Screen Shot 2022-08-19 at 11 07 43 PM" src="https://user-images.githubusercontent.com/99150447/185728379-8cecb557-8b66-41e6-9872-72ca2c31f3e6.png">
+
+### ERD 
 
 <img width="1061" alt="honey-rae-erd for mult users(customer and employee) example" src="https://user-images.githubusercontent.com/99150447/180350743-0a6dd7a5-5927-4b73-9baa-410eeb691a1b.png">
 
-
-
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
