@@ -109,9 +109,9 @@ export const TicketList = ({ searchTermState }) => {
                         </div>
                     </>
                     : <>
-                        <button onClick={() => navigate("/ticket/create")}>Create Ticket</button>
-                        <button onClick={() => updateOpenOnly(true)}>Open Ticket</button>
-                        <button onClick={() => updateOpenOnly(false)}>All My Tickets</button>
+                        <button className="tix-btn" onClick={() => navigate("/ticket/create")}>Create Ticket</button>
+                        <button className="tix-btn" onClick={() => updateOpenOnly(true)}>Open Ticket</button>
+                        <button className="tix-btn" onClick={() => updateOpenOnly(false)}>All My Tickets</button>
                     </>
 
                 // : "" //if false, show nothing

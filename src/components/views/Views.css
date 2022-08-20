@@ -1,0 +1,24 @@
+.hero-img {
+    background-color: green;
+    width: 100vh;
+    margin: 1rem 1rem 1rem 0;
+}
+
+.intro {
+background-color: rgb(251, 244, 235);
+display: flex;
+justify-content: space-between;
+padding: 1rem;
+margin-top: 1rem;
+}
+
+.calltoaction {
+    width: 8rem;
+    padding: .5rem;
+}
+
+
+.callBtn {
+    display: flex;
+    justify-content: center;
+}
