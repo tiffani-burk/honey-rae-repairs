@@ -1,3 +1,26 @@
+
+Created this application using React for multiple users. The user can log in as a customer or an employee. The employee-user has the ability to search service tickets by name, view emergency only tickets or all tickets and view a list of customers. When clicking on the customer link, they can view the customer details. They also have the ability to view employees and employee details. The customer-user has the ability to create a service request ticket, which then displays to their screen and updates to the employees account as well. The customer-user can also view open tickets (service requests that have not been worked on) and view just their service request tickets.  Dynamic coding. ERD is attached below.
+
+
+<img width="1024" alt="Screen Shot 2022-07-21 at 9 40 34 PM" src="https://user-images.githubusercontent.com/99150447/180351152-3b11eb39-498d-4edb-bfda-cf2c21785cfc.png">
+
+<img width="1024" alt="Screen Shot 2022-07-21 at 9 40 44 PM" src="https://user-images.githubusercontent.com/99150447/180351210-e35f9d94-ef1c-46f9-a1c0-8e6e073b65cc.png">
+
+<img width="1024" alt="Screen Shot 2022-07-21 at 9 40 56 PM" src="https://user-images.githubusercontent.com/99150447/180351260-4adb18ed-550b-4e38-ac32-73effc714e53.png">
+
+<img width="1024" alt="Screen Shot 2022-07-21 at 9 41 03 PM" src="https://user-images.githubusercontent.com/99150447/180351281-4bb292ab-cba3-4afb-b1b1-d2bf14744d49.png">
+
+<img width="1023" alt="Screen Shot 2022-07-21 at 9 41 09 PM" src="https://user-images.githubusercontent.com/99150447/180351303-c0e8f573-5093-4847-a3a4-badf9c300509.png">
+
+<img width="1019" alt="Screen Shot 2022-07-21 at 9 49 26 PM" src="https://user-images.githubusercontent.com/99150447/180352194-5b264e3c-b5c3-438a-baaa-f181464cd415.png">
+
+
+ERD 
+
+<img width="1061" alt="honey-rae-erd for mult users(customer and employee) example" src="https://user-images.githubusercontent.com/99150447/180350743-0a6dd7a5-5927-4b73-9baa-410eeb691a1b.png">
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
